@@ -1,0 +1,10 @@
+{
+  "name": "MarinaProject",
+  "version": "1",
+  "authors": [
+    "Marina"
+  ],
+  "description": "Marina project",
+  "main": "index.html",
+  "license": "MIT"
+}

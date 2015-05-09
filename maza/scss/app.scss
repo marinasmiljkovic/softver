@@ -1,0 +1,33 @@
+@import "../bower_components/foundation/scss/foundation.scss";
+
+.full_width{
+	max-width: 100%;
+	background-image: url("../images/pozadina1.jpg");
+	background-size: 100% 100%;
+	min-height: 700px;
+	background-repeat: no-repeat;
+}
+#link1{
+	position: relative;
+	top: 20%;
+}
+
+#link2{
+	position: relative;
+	top: 30%;
+}
+#link3{
+	position: relative;
+	top: 20%;
+}
+#link4{
+	position: relative;
+	top: 35%;
+}
+#link5{
+	position: relative;
+	top: 25%;
+}
+.whiteback{
+  background: rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Muzicka kultura</title>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/animate.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+
+</head>
+<body ng-app="application">
+	<header>
+		
+	</header>
+	<main ng-view>
+		
+	</main>
+
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/router.js"></script>
+<script src="js/controller/front_page.js"></script>
+<script type="text/ng-template" id="intro.html">
+    <div class="row full_width">
+        <a href="#/osnovni_pojmovi" class="link_to_lection large-2 columns animated slideInLeft" id="link1"><img src="images/dugme1.gif" alt=""></a>
+        <a href="#/trajanje_tonova" class="link_to_lection large-2 columns animated slideInDown" id="link2"><img src="images/dugme2.gif" alt=""></a>
+        <a href="#/linijski_sistem" class="link_to_lection large-2 columns animated slideInDown" id="link3"><img src="images/dugme3.gif" alt=""></a>
+        <a href="#/naucimo_note" class="link_to_lection large-2 columns animated slideInUp" id="link4"><img src="images/dugme4.gif" alt=""></a>
+        <a href="#/o_autorima" class="link_to_lection large-2 columns animated slideInRight" id="link5"><img src="images/dugme5.gif" alt=""></a>
+    </div>
+</script>
+<script type="text/ng-template" id="osnovni_pojmovi.html">
+    <div class="row full_width">
+        <div style="clear: both;"></div>
+        <div class="large-12 columns whiteback">
+            <h1>Takt i ritam</h1>
+        </div>
+        <div class="large-12 columns whiteback">
+           <p>
+                 Pogledaj gde stanuju note. <br>
+               <img src="images/takt i taktica.png">
+           </p>
+           <p>
+                Manje celine u notnom zapisu <b>(tokovi)</b> razdvojene su uspravnim crtama <b>(takticama)</b>. Na kraju notnog zapisa nalaze se dve taktice. Prva je tanja, a druga deblja <img src="images/taktice.png">. Kada pored njih nacrtate dve tačkice <img src="images/taktice1.png"> ili <img src="images/taktice2.png">, nastaje <b>znak za ponavljanje</b>. Vežba ili onaj njen deo prema kome su tačkice okrenute treba da se ponovi.
+           </p>
+           <p>
+                Mala muzička celina ispisana u notnom tekstu, razdvojena crticama (takticama) naziva se <b>takt</b>. Na kraju notnog zapisa su dve taktice. Najmanji takt ima dve jedinice brojanja (jedinice brojanja ravnomerno otkucavaju kao sat i omogućavaju nam da precizno izvedemo ritam). Jedinice brojanja su četvrtine note. Označava ih nota ili ili donji broj u razlomku, koji se piše na početku notnog zapisa (<img src="images/brojanje do dva.png">). Gornji broj zna;i da treba da imaš dve jedinice, tj. da treba da brojiš do dva. 
+           </p>
+
+           <p>
+               <img src="images/tasi tasi.png">       
+                </p>
+
+                <p>
+                U muzici, slično kao i u govoru, smenjuju se duži i kraći tonovi, jači i tiši. Smenjivanjem jednakih ili različitih tonskih trajanja i njihovih jačina nastaje <b>ritam</b>.
+           </p>
+
+           <p>
+                <b>Luk</b> <img src="images/luk.png"> označava da se note koje su njime povezane pevaju kao jedan slog.
+
+           </p>
+        </div>
+    </div>
+</script>
+<script type="text/ng-template" id="trajanje_tonova.html">
+    <div class="row full_width">
+        <div style="clear: both;"></div>
+        <div class="large-12 columns whiteback">
+            <h1>Trajanje tonova</h1>
+        </div>
+        <div class="large-12 columns whiteback">
+            <p>
+               Neki tonovi traju duže, a neki kraće. Ta trajanja zapisujemo <b>notama</b>. Kada notama zapišemo trajanje tonova u pesmici dobijamo notni zapis pesmice, tj. njen ritam.
+            </p>
+            <p>
+                <b>Nota</b> je znak kojim se obeležava trajanje i visina tonova.
+            </p>
+            <p>
+                Nota <img src="images/cetvrtine.png"> označava duže trajanje i naziva se <b>četvrtina</b>. Ona je jednaka jednom pokretu u razbrajanju razbrajalice ili jednom pljesku dlanom o dlan kada tapšemo tj. jedno brojanje.
+            </p>
+            <p>
+                Kraća trajanja zapisana su notama koje se nazivaju <b>osmine</b>. Mogu da se pišu odvojeno sa barjačićem ili spojeno sa jednom notnom crtom.
+            </p>
+            <p>
+                <img src="images/osmine.png">
+            </p>
+            <p>
+                <img src="images/polovina note.png"> Ovaj znak označava <b>polovinu note</b>. Ona traje dva brojanja.
+            </p>
+            <p> 
+            <img src="images/polovina note1.png">
+            </p>
+            <p>
+                <img src="images/cela nota.png"> Ovaj znak označava <b>celu notu</b>. Cela nota traje četiri brojanja.
+            </p>
+            <p>
+                 <img src="images/cela nota1.png">
+            </p>
+            
+            <p>
+                Muzika se sastoji iz zvukova i tišina. Note su zvuci za tonska trajanja, a pauze su znak za ćutanje.
+            </p>
+            
+            <p>
+                <img src="images/cetvrtina pauze.png"> Ovo je <b>četvrtina pauze</b>. Ona traje jedno brojanje, isto kao i četvrtina note.
+            </p>
+            <p>
+                <img src="images/osmina pauze.png"> Ovo je <b>osmina pauze</b>. Ona traje isto koliko i osmina note, tj. pola brojanja.
+            </p>
+            <p>
+            <img src="images/polovina pauze.png"> Ovo je <b>polovina pauze</b>. Kao i polovina note, polovina pauze traje do dva brojanja.
+            </p>
+
+
+        </div>
+    </div>
+</script>
+<script type="text/ng-template" id="linijski_sistem.html">
+    <div class="row full_width">
+        <div style="clear: both;"></div>
+        <div class="large-12 columns whiteback">
+            <h1>Linijski sistem</h1>
+        </div>
+        <div class="large-12 columns whiteback">
+        <p>
+        <img src="images/dan.png">
+        </p>
+        <p>
+        Na slici je lep, veliki hotel, ali njegova vrata se zaključavaju veoma eobičnim ključem <img src="images/violinski kljuc.png"> Hotel ima 5 spratova i 4 međusprata. Gosti ovog hotela su veoma veseli i zato stalno pevaju. Gosti ovog hotela su posećuju sve spratove, pa i podrum u kome se nalazi restoran. Primetili su da su im glasovi viši na gornjim spratovima. Na nižim spratovima i u podrumu glasovi su im bili niži. Nisu znali zašto i kako se to dešava, ali su odlučili da saznaju.
+        </p>
+        <p>
+            Ono što je u našoj priči hotel,u muzici se naziva <b>linijski sistem</b>. <br>
+            <img src="images/linijski sistem.png">
+        </p>
+        <p>
+        Umesto spratova i međuspratova u linijskom sistemu postoje <b>linije</b>  i <b>praznine</b>. Linija ima 5 a praznina 4. Broje se odozdo na gore, kako je i označeno na slici. Na početku linijskog sistema piše se <b>violinski ključ</b> <img src="images/violinski kljuc.png">, a odmah iza njega piše se oznakaza vrstu takta <img src="images/brojanje do dva.png">, to jest <img src="images/2-4.png">. 
+        </p>
+
+
+
+      </div>
+    </div>
+</script>
+<script type="text/ng-template" id="naucimo_note.html">
+   
+            <h1></h1>
+    
+</script>
+
+
+
+<script type="text/ng-template" id="o_autorima.html">
+    <h1>o autorima</h1>
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var width  = $(window).width();
+		var height = $(window).height();
+		$('.full_width').css({'width' : width, 'height' : height});
+	});
+</script>
+</body>
+
+</html>
