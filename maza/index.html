@@ -33,7 +33,7 @@
     </div>
 </script>
 <script type="text/ng-template" id="osnovni_pojmovi.html">
-    <div class="row full_width">
+    <div class="row page_back">
         <div style="clear: both;"></div>
         <div class="large-12 columns whiteback">
             <h1>Takt i ritam</h1>
@@ -63,10 +63,13 @@
 
            </p>
         </div>
+        <div class="row">
+            <a href="#/meni" class="button radius">Glavni meni</a>
+        </div>
     </div>
 </script>
 <script type="text/ng-template" id="trajanje_tonova.html">
-    <div class="row full_width">
+    <div class="row page_back">
         <div style="clear: both;"></div>
         <div class="large-12 columns whiteback">
             <h1>Trajanje tonova</h1>
@@ -116,10 +119,13 @@
 
 
         </div>
+        <div class="row">
+            <a href="#/meni" class="button radius">Glavni meni</a>
+        </div>
     </div>
 </script>
 <script type="text/ng-template" id="linijski_sistem.html">
-    <div class="row full_width">
+    <div class="row page_back">
         <div style="clear: both;"></div>
         <div class="large-12 columns whiteback">
             <h1>Linijski sistem</h1>
@@ -142,15 +148,22 @@
 
 
       </div>
+        <div class="row">
+            <a href="#/meni" class="button radius">Glavni meni</a>
+        </div>
     </div>
 </script>
 <script type="text/ng-template" id="naucimo_note.html">
-    <div class="row page_back">
+    <div class="row full_width">
         <a href="#/nota_do" class="link_to_lection large-3 columns animated slideInLeft"><img src="images/dugme_do.gif" /></a>
         <a href="#/nota_fa" class="link_to_lection large-3 columns animated slideInDown"><img src="images/dugme_fa.gif" /></a>
         <a href="#/nota_re" class="link_to_lection large-3 columns animated slideInUp"><img src="images/dugme_re.gif" /></a>
         <a href="#/nota_sol_mi" class="link_to_lection large-3 columns animated slideInRight"><img src="images/dugmesolmi.gif" /></a>
+        <div class="row">
+            <a href="#/meni" class="button radius">Glavni meni</a>
+        </div>
     </div>
+
 </script>
 
 
@@ -184,7 +197,8 @@
 	$(document).ready(function(){
 		var width  = $(window).width();
 		var height = $(window).height();
-		$('.full_width').css({'width' : width, 'height' : height});
+		$('.full_width').css({'width' : width, 'min-height' : height});
+        $('.page_back').css({'width' : width, 'min-height' : height});
 	});
 </script>
 </body>
