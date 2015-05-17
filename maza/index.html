@@ -239,12 +239,29 @@
     <div class="row page_back">
         <img src="images/do.png" class="animated slideInRight">
  
-<p align="center"><img src="images/dodo.png"></p>
+ <div class="pesmica3"> <div class="pokazivac"> </div> </div>
 
-        <audio controls>
+        <audio id="do_pesmica3"controls>
   <source src="/musicDo, do, sta je to.ogg" type="audio/ogg">
   <source src="music/Do, do, sta je to.mp3" type="audio/mpeg">
 </audio>
+
+ </div>
+    <div class="row move_to_bottom">
+<a href="#/naucimo_note" class="button radius">Naučimo note</a>    </div>
+</script>
+<script src="js/animation_controler.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+        $('#do_pesmica3').on('play', function(){
+            var do = new Do();
+            do.runSongPointer();
+        });
+        
+    var width  = $(window).width();
+    var height = $(window).height();
+    $('.full_width').css({'width' : width, 'min-height' : height});
+        $('.page_back').css({'width' : width, 'min-height' : height});
 
 
 </div>
@@ -257,12 +274,29 @@
     <div class="row page_back">
        <img src="images/resava.png"class="animated slideInLeft">
 
- <p align="center"><img src="images/re.png"></p>
+ <div class="pesmica2"> <div class="pokazivac"> </div> </div>
 
-<audio controls>
+<audio id="re_pesmica" controls>
   <source src="music/Resavo, vodo 'ladna.ogg" type="audio/ogg">
   <source src="music/Resavo, vodo 'ladna.mp3" type="audio/mpeg">
 </audio>
+
+ </div>
+    <div class="row move_to_bottom">
+<a href="#/naucimo_note" class="button radius">Naučimo note</a>    </div>
+</script>
+<script src="js/animation_controler.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+        $('#re_pesmica').on('play', function(){
+            var re = new Re();
+            re.runSongPointer();
+        });
+        
+    var width  = $(window).width();
+    var height = $(window).height();
+    $('.full_width').css({'width' : width, 'min-height' : height});
+        $('.page_back').css({'width' : width, 'min-height' : height});
 
        
     </div>    
@@ -273,12 +307,29 @@
     <div class="row page_back">
         <img src="images/falila.png" class="animated slideInUp"> <br>
 
- <p align="center"><img src="images/fa.png"></p> 
+ <div class="pesmica1"> <div class="pokazivac"> </div> </div>
 
-        <audio controls>
+        <audio id="fa_pesmica" controls>
   <source src="music/Falila mi se.ogg" type="audio/ogg">
   <source src="music/Falila mi se.mp3" type="audio/mpeg">
 </audio>
+
+ </div>
+    <div class="row move_to_bottom">
+<a href="#/naucimo_note" class="button radius">Naučimo note</a>    </div>
+</script>
+<script src="js/animation_controler.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+        $('#fa_pesmica').on('play', function(){
+            var fa = new Fa();
+            fa.runSongPointer();
+        });
+        
+    var width  = $(window).width();
+    var height = $(window).height();
+    $('.full_width').css({'width' : width, 'min-height' : height});
+        $('.page_back').css({'width' : width, 'min-height' : height});
 
 
     </div>
@@ -291,9 +342,7 @@
 
  <div class="pesmica"> <div class="pokazivac"> </div> </div>
 
-        
-       
-        </p> 
+      
 <audio id="solmi_pesmica" controls>
   <source src="music/Sol mi daj.ogg" type="audio/ogg">
   <source src="music/Sol mi daj.mp3" type="audio/mpeg">
