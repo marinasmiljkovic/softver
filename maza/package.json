@@ -1,12 +1,12 @@
 {
-  "name": "MarinaProject",
+  "name": "Project",
   "version": "1.0.0",
-  "description": "Marina theme",
+  "description": "M theme",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Marina",
+  
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",

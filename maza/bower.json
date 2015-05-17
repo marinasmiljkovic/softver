@@ -1,10 +1,8 @@
 {
-  "name": "MarinaProject",
+  "name": "Project",
   "version": "1",
-  "authors": [
-    "Marina"
-  ],
-  "description": "Marina project",
+
+  "description": "project",
   "main": "index.html",
   "license": "MIT"
 }

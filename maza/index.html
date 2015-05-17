@@ -11,7 +11,15 @@
 <script src="bower_components/foundation/js/foundation.min.js"></script>
 
 </head>
+
 <body ng-app="application">
+
+ <audio style="position: fixed; bottom: 0px; right: 0px; z-index: 9999;" controls>
+  <source src="music/UnderTheSea.ogg" type="audio/ogg">
+  <source src="music/UnderTheSea.mp3" type="audio/mpeg">
+</audio>
+
+
 	<header>
 		
 	</header>
@@ -24,34 +32,42 @@
 <script src="js/router.js"></script>
 <script src="js/controller/front_page.js"></script>
 <script type="text/ng-template" id="intro.html">
-    <div class="row full_width">
+    <div class="row full_width bubbles" >
+
         <a href="#/osnovni_pojmovi" class="link_to_lection large-2 columns animated slideInLeft" id="link1"><img src="images/dugme1.gif" alt=""></a>
         <a href="#/trajanje_tonova" class="link_to_lection large-2 columns animated slideInDown" id="link2"><img src="images/dugme2.gif" alt=""></a>
         <a href="#/linijski_sistem" class="link_to_lection large-2 columns animated slideInDown" id="link3"><img src="images/dugme3.gif" alt=""></a>
         <a href="#/naucimo_note" class="link_to_lection large-2 columns animated slideInUp" id="link4"><img src="images/dugme4.gif" alt=""></a>
         <a href="#/o_autorima" class="link_to_lection large-2 columns animated slideInRight" id="link5"><img src="images/dugme5.gif" alt=""></a>
+
+    <p align="center"><img src="images/muzickecarolije.png" class="animated slideInDown"></p>
+        
     </div>
-</script>
+
+
+
+
+
 <script type="text/ng-template" id="osnovni_pojmovi.html">
     <div class="row page_back">
         <div style="clear: both;"></div>
         <div class="large-12 columns whiteback">
-            <h1>Takt i ritam</h1>
+            <img src="images/taktiritam.png"class="animated slideInRight">
         </div>
         <div class="large-12 columns whiteback">
            <p>
-                 Pogledaj gde stanuju note. <br>
+                 Pogledajte gde stanuju note. <br>
                <img src="images/takt i taktica.png">
            </p>
            <p>
                 Manje celine u notnom zapisu <b>(tokovi)</b> razdvojene su uspravnim crtama <b>(takticama)</b>. Na kraju notnog zapisa nalaze se dve taktice. Prva je tanja, a druga deblja <img src="images/taktice.png">. Kada pored njih nacrtate dve tačkice <img src="images/taktice1.png"> ili <img src="images/taktice2.png">, nastaje <b>znak za ponavljanje</b>. Vežba ili onaj njen deo prema kome su tačkice okrenute treba da se ponovi.
            </p>
            <p>
-                Mala muzička celina ispisana u notnom tekstu, razdvojena crticama (takticama) naziva se <b>takt</b>. Na kraju notnog zapisa su dve taktice. Najmanji takt ima dve jedinice brojanja (jedinice brojanja ravnomerno otkucavaju kao sat i omogućavaju nam da precizno izvedemo ritam). Jedinice brojanja su četvrtine note. Označava ih nota ili ili donji broj u razlomku, koji se piše na početku notnog zapisa (<img src="images/brojanje do dva.png">). Gornji broj zna;i da treba da imaš dve jedinice, tj. da treba da brojiš do dva. 
+                Mala muzička celina ispisana u notnom tekstu, razdvojena crticama (takticama) naziva se <b>takt</b>. Na kraju notnog zapisa su dve taktice. Najmanji takt ima dve jedinice brojanja (jedinice brojanja ravnomerno otkucavaju kao sat i omogućavaju nam da precizno izvedemo ritam). Jedinice brojanja su četvrtine note. Označava ih nota ili donji broj u razlomku, koji se piše na početku notnog zapisa (<img src="images/brojanje do dva.png">). Gornji broj znači da treba da imaš dve jedinice, tj. da treba da brojiš do dva. 
            </p>
 
            <p>
-               <img src="images/tasi tasi.png">       
+               <img src="images/tasitasi.png">       
                 </p>
 
                 <p>
@@ -61,6 +77,10 @@
            <p>
                 <b>Luk</b> <img src="images/luk.png"> označava da se note koje su njime povezane pevaju kao jedan slog.
 
+           </p>
+
+           <p> 
+           <img src="images/hobotnica.png">
            </p>
         </div>
     </div>
@@ -72,7 +92,7 @@
     <div class="row page_back">
         <div style="clear: both;"></div>
         <div class="large-12 columns whiteback">
-            <h1>Trajanje tonova</h1>
+            <img src="images/trajanjetonova.png"class="animated slideInLeft">
         </div>
         <div class="large-12 columns whiteback">
             <p>
@@ -82,7 +102,7 @@
                 <b>Nota</b> je znak kojim se obeležava trajanje i visina tonova.
             </p>
             <p>
-                Nota <img src="images/cetvrtine.png"> označava duže trajanje i naziva se <b>četvrtina</b>. Ona je jednaka jednom pokretu u razbrajanju razbrajalice ili jednom pljesku dlanom o dlan kada tapšemo tj. jedno brojanje.
+                Nota <img src="images/cetvrtina.png"> označava duže trajanje i naziva se <b>četvrtina</b>. Ona je jednaka jednom pokretu u razbrajanju razbrajalice ili jednom pljesku dlanom o dlan kada tapšemo tj. jedno brojanje.
             </p>
             <p>
                 Kraća trajanja zapisana su notama koje se nazivaju <b>osmine</b>. Mogu da se pišu odvojeno sa barjačićem ili spojeno sa jednom notnom crtom.
@@ -91,16 +111,16 @@
                 <img src="images/osmine.png">
             </p>
             <p>
-                <img src="images/polovina note.png"> Ovaj znak označava <b>polovinu note</b>. Ona traje dva brojanja.
+                <img src="images/polovina.png"> Ovaj znak označava <b>polovinu note</b>. Ona traje dva brojanja.
             </p>
             <p> 
-            <img src="images/polovina note1.png">
+            <img src="images/polovina1.png"> <img src="images/polovina2.png">
             </p>
             <p>
                 <img src="images/cela nota.png"> Ovaj znak označava <b>celu notu</b>. Cela nota traje četiri brojanja.
             </p>
             <p>
-                 <img src="images/cela nota1.png">
+                 <img src="images/celanota.png"> 
             </p>
             
             <p>
@@ -116,7 +136,9 @@
             <p>
             <img src="images/polovina pauze.png"> Ovo je <b>polovina pauze</b>. Kao i polovina note, polovina pauze traje do dva brojanja.
             </p>
-
+ <p> 
+           <img src="images/jegulja.png">
+           </p>
 
         </div>
     </div>
@@ -128,21 +150,21 @@
     <div class="row page_back">
         <div style="clear: both;"></div>
         <div class="large-12 columns whiteback">
-            <h1>Linijski sistem</h1>
+            <img src="images/linijskisistem.png"class="animated slideInDown">
         </div>
         <div class="large-12 columns whiteback">
         <p>
         <img src="images/dan.png">
         </p>
         <p>
-        Na slici je lep, veliki hotel, ali njegova vrata se zaključavaju veoma eobičnim ključem <img src="images/violinski kljuc.png"> Hotel ima 5 spratova i 4 međusprata. Gosti ovog hotela su veoma veseli i zato stalno pevaju. Gosti ovog hotela su posećuju sve spratove, pa i podrum u kome se nalazi restoran. Primetili su da su im glasovi viši na gornjim spratovima. Na nižim spratovima i u podrumu glasovi su im bili niži. Nisu znali zašto i kako se to dešava, ali su odlučili da saznaju.
+        Na slici je lep, veliki hotel, ali njegova vrata se zaključavaju veoma neobičnim ključem <img src="images/violinski kljuc.png">. Hotel ima 5 spratova i 4 međusprata. <br> Gosti ovog hotela su veoma veseli i zato stalno pevaju. Gosti ovog hotela posećuju sve spratove, pa i podrum u kome se nalazi restoran. Primetili su da su im glasovi viši na gornjim spratovima. Na nižim spratovima i u podrumu glasovi su im bili niži. Nisu znali zašto i kako se to dešava, ali su odlučili da saznaju.
         </p>
         <p>
             Ono što je u našoj priči hotel,u muzici se naziva <b>linijski sistem</b>. <br>
             <img src="images/linijski sistem.png">
         </p>
         <p>
-        Umesto spratova i međuspratova u linijskom sistemu postoje <b>linije</b>  i <b>praznine</b>. Linija ima 5 a praznina 4. Broje se odozdo na gore, kako je i označeno na slici. Na početku linijskog sistema piše se <b>violinski ključ</b> <img src="images/violinski kljuc.png">, a odmah iza njega piše se oznakaza vrstu takta <img src="images/brojanje do dva.png">, to jest <img src="images/2-4.png">. 
+        Umesto spratova i međuspratova u linijskom sistemu postoje <b>linije</b>  i <b>praznine</b>. Linija ima 5 a praznina 4. Broje se odozdo na gore. Na početku linijskog sistema piše se <b>violinski ključ</b> <img src="images/violinski kljuc.png">, a odmah iza njega piše se oznaka za vrstu takta <img src="images/brojanje do dva.png">, to jest <img src="images/2-4.png">. 
         </p>
 
 
@@ -154,66 +176,233 @@
     </div>
 </script>
 <script type="text/ng-template" id="naucimo_note.html">
-    <div class="row full_width">
+    <div class="row full_width bubbles">
         <a href="#/nota_sol_mi" class="link_to_lection large-3 columns animated slideInRight"><img src="images/dugmesolmi.gif" /></a>
         <a href="#/nota_do" class="link_to_lection large-3 columns animated slideInLeft"><img src="images/dugme_do.gif" /></a>
         <a href="#/nota_re" class="link_to_lection large-3 columns animated slideInUp"><img src="images/dugme_re.gif" /></a>
         <a href="#/nota_fa" class="link_to_lection large-3 columns animated slideInDown"><img src="images/dugme_fa.gif" /></a>
+    
+
+    <p align="center"><img src="images/slikar.png" class="animated slideInDown"></p>
+
     </div>
     <div class="row move_to_bottom">
         <a href="#/meni" class="button radius">Glavni meni</a>
-    </div>
 
+    </div>
 </script>
 
 
 
 <script type="text/ng-template" id="o_autorima.html">
     <div class="row page_back">
-        <h1>o autorima</h1>
+        <img src="images/autori.png"class="animated slideInUp">
+
+        
+        <p>
+        <br> <br>
+        
+        <img src="images/dm.png"><br>
+        Student četvrte godine Pedagoškog fakulteta u Somboru. <br>
+        Smer: Dizajner medija u obrazovanju. <br>
+        E-mail: dragana.mitrovic92@gmail.com
+        </p>
+
+        <p>
+        <img src="images/ms.png" ><br>
+        Student četvrte godine Pedagoškog fakulteta u Somboru. <br>
+        Smer: Dizajner medija u obrazovanju. <br>
+        E-mail: marinasmiljkovic92@gmail.com
+        </p>
+
+        <p>
+        <img src="images/tb.png"><br>
+        Student četvrte godine Pedagoškog fakulteta u Somboru. <br>
+        Smer: Dizajner medija u obrazovanju. <br>
+        E-mail: tanja_bokan@hotmail.com
+        </p>
+
+        <p>
+        <img src="images/ak.png"><br>
+        Student četvrte godine Pedagoškog fakulteta u Somboru. <br>
+        Smer: Dizajner medija u obrazovanju. <br>
+        E-mail: kabanica.ana@gmail.com
+        </p>
     </div>   
     <div class="row move_to_bottom">
-            <a href="#/meni" class="button radius">Glavni meni</a>
+            <a href="#/naucimo_note" class="button radius">Naučimo note</a>
+
+    </div>
     </div>
 </script>
 <script type="text/ng-template" id="do.html">
     <div class="row page_back">
-        <h1>Do</h1>
+        <img src="images/do.png" class="animated slideInRight">
+ 
+<p align="center"><img src="images/dodo.png"></p>
+
+        <audio controls>
+  <source src="/musicDo, do, sta je to.ogg" type="audio/ogg">
+  <source src="music/Do, do, sta je to.mp3" type="audio/mpeg">
+</audio>
+
+
+</div>
+        <div class="large-12 columns whiteback">
     </div>
     <div class="row move_to_bottom">
-        <a href="#/meni" class="button radius">Glavni meni</a>
-    </div>
+<a href="#/naucimo_note" class="button radius">Naučimo note</a>    </div>
 </script>
 <script type="text/ng-template" id="re.html">
     <div class="row page_back">
-        <h1>Re</h1>
+       <img src="images/resava.png"class="animated slideInLeft">
+
+ <p align="center"><img src="images/re.png"></p>
+
+<audio controls>
+  <source src="music/Resavo, vodo 'ladna.ogg" type="audio/ogg">
+  <source src="music/Resavo, vodo 'ladna.mp3" type="audio/mpeg">
+</audio>
+
+       
     </div>    
     <div class="row move_to_bottom">
-        <a href="#/meni" class="button radius">Glavni meni</a>
-    </div>
+<a href="#/naucimo_note" class="button radius">Naučimo note</a>    </div>
 </script>
 <script type="text/ng-template" id="fa.html">
     <div class="row page_back">
-        <h1>Fa</h1>
+        <img src="images/falila.png" class="animated slideInUp"> <br>
+
+ <p align="center"><img src="images/fa.png"></p> 
+
+        <audio controls>
+  <source src="music/Falila mi se.ogg" type="audio/ogg">
+  <source src="music/Falila mi se.mp3" type="audio/mpeg">
+</audio>
+
+
     </div>
     <div class="row move_to_bottom">
-         <a href="#/meni" class="button radius">Glavni meni</a>
-    </div>
+<a href="#/naucimo_note" class="button radius">Naučimo note</a>    </div>
 </script>
 <script type="text/ng-template" id="solmi.html">
     <div class="row page_back">
-        <h1>Solmi</h1>
+        <img src="images/sol.png"class="animated slideInDown"> 
+
+ <div class="pesmica"> <div class="pokazivac"> </div> </div>
+
+        
+       
+        </p> 
+<audio id="solmi_pesmica" controls>
+  <source src="music/Sol mi daj.ogg" type="audio/ogg">
+  <source src="music/Sol mi daj.mp3" type="audio/mpeg">
+</audio>
+
+
     </div>
     <div class="row move_to_bottom">
-            <a href="#/meni" class="button radius">Glavni meni</a>
-    </div>
+<a href="#/naucimo_note" class="button radius">Naučimo note</a>    </div>
 </script>
+<script src="js/animation_controler.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
+        $('#solmi_pesmica').on('play', function(){
+            var solmi = new SolMi();
+            solmi.runSongPointer();
+        });
+        
 		var width  = $(window).width();
 		var height = $(window).height();
 		$('.full_width').css({'width' : width, 'min-height' : height});
         $('.page_back').css({'width' : width, 'min-height' : height});
+
+        var $bubbles = $('.bubbles');
+
+function bubbles() {
+  
+  // Settings
+  var min_bubble_count = 20, // Minimum number of bubbles
+      max_bubble_count = 60, // Maximum number of bubbles
+      min_bubble_size = 3, // Smallest possible bubble diameter (px)
+      max_bubble_size = 12; // Maximum bubble blur amount (px)
+  
+  // Calculate a random number of bubbles based on our min/max
+  var bubbleCount = min_bubble_count + Math.floor(Math.random() * (max_bubble_count + 1));
+  
+  // Create the bubbles
+  for (var i = 0; i < bubbleCount; i++) {
+    $bubbles.append('<div class="bubble-container"><div class="bubble"></div></div>');
+  }
+  
+  // Now randomise the various bubble elements
+  $bubbles.find('.bubble-container').each(function(){
+    
+    // Randomise the bubble positions (0 - 100%)
+    var pos_rand = Math.floor(Math.random() * 101);
+    
+    // Randomise their size
+    var size_rand = min_bubble_size + Math.floor(Math.random() * (max_bubble_size + 1));
+    
+    // Randomise the time they start rising (0-15s)
+    var delay_rand = Math.floor(Math.random() * 16);
+    
+    // Randomise their speed (3-8s)
+    var speed_rand = 3 + Math.floor(Math.random() * 9);
+    
+    // Random blur
+    var blur_rand = Math.floor(Math.random() * 3);
+    
+    // Cache the this selector
+    var $this = $(this);
+    
+    // Apply the new styles
+    $this.css({
+      'left' : pos_rand + '%',
+      
+      '-webkit-animation-duration' : speed_rand + 's',
+      '-moz-animation-duration' : speed_rand + 's',
+      '-ms-animation-duration' : speed_rand + 's',
+      'animation-duration' : speed_rand + 's',
+      
+      '-webkit-animation-delay' : delay_rand + 's',
+      '-moz-animation-delay' : delay_rand + 's',
+      '-ms-animation-delay' : delay_rand + 's',
+      'animation-delay' : delay_rand + 's',
+      
+      '-webkit-filter' : 'blur(' + blur_rand  + 'px)',
+      '-moz-filter' : 'blur(' + blur_rand  + 'px)',
+      '-ms-filter' : 'blur(' + blur_rand  + 'px)',
+      'filter' : 'blur(' + blur_rand  + 'px)',
+    });
+    
+    $this.children('.bubble').css({
+      'width' : size_rand + 'px',
+      'height' : size_rand + 'px'
+    });
+    
+  });
+}
+
+// In case users value their laptop battery life
+// Allow them to turn the bubbles off
+$('.bubble-toggle').click(function(){
+  if($bubbles.is(':empty')) {
+    bubbles();
+    $bubbles.show();
+    $(this).text('Bubbles Off');
+  } else {
+    $bubbles.fadeOut(function(){
+      $(this).empty();
+    });
+    $(this).text('Bubbles On');
+  }
+  
+  return false;
+});
+
+bubbles();
+
 	});
 </script>
 </body>
