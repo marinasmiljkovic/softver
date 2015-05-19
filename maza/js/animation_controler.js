@@ -2,14 +2,15 @@
  * Animation controller object
  * @constructor
  */
-function AnimationControler() {
-};
+function AnimationControler() {};
 
 /**
  * Counter for current position of loop
  * @type {number}
  */
 AnimationControler.prototype.i = 0;
+
+AnimationControler.prototype.savePosition = 0;
 
 /**
  * Array of params ( time, y pos, x pos )
@@ -94,7 +95,10 @@ SolMi.prototype = new AnimationControler();
  */
 SolMi.prototype.runSongPointer = function () {
 
-	this.i = 0;
+	if( this.savePosition != 0){
+		this.i = this.savePosition;
+	}
+
 	this.arrayOfParams = [[3000, 200, 100], [2200, 68, 101], [300, 86, 131], [500, 79, 173], [800, 69, 245],
 												[300, 86, 274], [500, 79, 314], [800, 69, 398], [300, 86, 430], [300, 70, 485], [300, 97, 516],
 												[400, 87, 600], [400, 104, 631], [300, 97, 678],
@@ -114,6 +118,17 @@ SolMi.prototype.runSongPointer = function () {
 												[400, 247, 322], [300, 258, 376], [300, 275, 462], [300, 249, 496], [300, 249, 564],
 												[300, 258, 596], [400, 258, 683]];
 	this.runAnimationFromObject();
+};
+
+/**
+ * Pause song remember position
+ *
+ * @return void
+ */
+SolMi.prototype.pauseSongNow = function () {
+
+	this.savePosition = this.i;
+	this.i = this.arrayOfParams.length + 1;
 };
 
 /**
@@ -137,10 +152,24 @@ Fa.prototype = new AnimationControler();
  */
 Fa.prototype.runSongPointer = function () {
 
-	this.i = 0;
+	if( this.savePosition != 0){
+		this.i = this.savePosition;
+	}
+
 	this.arrayOfParams = [[]];
 
 	this.runAnimationFromObject();
+};
+
+/**
+ * Pause song, remember position
+ *
+ * @return void
+ */
+Fa.prototype.pauseSongNow = function () {
+
+	this.savePosition = this.i;
+	this.i = this.arrayOfParams.length + 1;
 };
 
 /**
@@ -164,10 +193,23 @@ Re.prototype = new AnimationControler();
  */
 Re.prototype.runSongPointer = function () {
 
-	this.i = 0;
+	if( this.savePosition != 0){
+		this.i = this.savePosition;
+	}
 	this.arrayOfParams = [[1000, 212, 222], [1100, 112, 118], [800, 92, 178]];
 
 	this.runAnimationFromObject();
+};
+
+/**
+ * Pause song, remember position
+ *
+ * @return void
+ */
+Re.prototype.pauseSongNow = function () {
+
+	this.savePosition = this.i;
+	this.i = this.arrayOfParams.length + 1;
 };
 
 /**
@@ -191,8 +233,21 @@ Do.prototype = new AnimationControler();
  */
 Do.prototype.runSongPointer = function () {
 
-	this.i = 0;
+	if( this.savePosition != 0){
+		this.i = this.savePosition;
+	}
 	this.arrayOfParams = [[1000, 112, 113], [1000, 112, 113], [900, 112, 146]];
 
 	this.runAnimationFromObject();
+};
+
+/**
+ * Pause song, remember position
+ *
+ * @return void
+ */
+Do.prototype.pauseSongNow = function () {
+
+	this.savePosition = this.i;
+	this.i = this.arrayOfParams.length + 1;
 };

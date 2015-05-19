@@ -101,9 +101,12 @@ var controllers =
 			var height = $(window).height();
 			$('.full_width').css('min-height', height);
 			$('.page_back').css( 'min-height', height);
+			var solmi = new SolMi();
 			$('#solmi_pesmica').on('play', function () {
-				var solmi = new SolMi();
 				solmi.runSongPointer();
+			});
+			$('#solmi_pesmica').on('pause', function () {
+				solmi.pauseSongNow();
 			});
 		})
 		.controller('faCtrl', function ($scope) {
@@ -119,17 +122,23 @@ var controllers =
 			var height = $(window).height();
 			$('.full_width').css('min-height', height);
 			$('.page_back').css( 'min-height', height);
+			var re = new Re();
 			$('#re_pesmica').on('play', function () {
-				var re = new Re();
 				re.runSongPointer();
+			});
+			$('#re_pesmica').on('pause', function () {
+				re.pauseSongNow();
 			});
 		})
 		.controller('doCtrl', function ($scope) {
 			var height = $(window).height();
 			$('.full_width').css('min-height', height);
 			$('.page_back').css( 'min-height', height);
-			$('#do_pesmica3').on('play', function ($scope) {
-				var do_song = new Do();
+			var do_song = new Do();
+			$('#do_pesmica3').on('play', function () {
 				do_song.runSongPointer();
+			});
+			$('#do_pesmica3').on('pause', function () {
+				do_song.pauseSongNow();
 			});
 		});
