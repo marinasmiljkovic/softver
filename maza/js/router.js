@@ -27,19 +27,19 @@ app.config(['$routeProvider',
 			}).
 			when('/nota_do', {
 				templateUrl: 'do.html',
-				controller: 'osnovniPojmovi'
+				controller: 'doCtrl'
 			}).
 			when('/nota_fa', {
 				templateUrl: 'fa.html',
-				controller: 'osnovniPojmovi'
+				controller: 'faCtrl'
 			}).
 			when('/nota_re', {
 				templateUrl: 're.html',
-				controller: 'osnovniPojmovi'
+				controller: 'reCtrl'
 			}).
 			when('/nota_sol_mi', {
 				templateUrl: 'solmi.html',
-				controller: 'osnovniPojmovi'
+				controller: 'solmiDaj'
 			}).
       otherwise({
         redirectTo: '/meni'
