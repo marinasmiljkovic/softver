@@ -103,19 +103,26 @@ var controllers =
 			$('.page_back').css( 'min-height', height);
 			var solmi = new SolMi();
 			$('#solmi_pesmica').on('play', function () {
+				$('.pokazivac').show();
 				solmi.runSongPointer();
 			});
 			$('#solmi_pesmica').on('pause', function () {
 				solmi.pauseSongNow();
+				$('.pokazivac').hide();
 			});
 		})
 		.controller('faCtrl', function ($scope) {
 			var height = $(window).height();
 			$('.full_width').css('min-height', height);
 			$('.page_back').css( 'min-height', height);
+			var fa = new Fa();
 			$('#fa_pesmica').on('play', function () {
-				var fa = new Fa();
+				$('.pokazivac').show();
 				fa.runSongPointer();
+			});
+			$('#fa_pesmica').on('pause', function () {
+				$('.pokazivac').hide();
+				fa.pauseSongNow();
 			});
 		})
 		.controller('reCtrl', function ($scope) {
@@ -124,10 +131,12 @@ var controllers =
 			$('.page_back').css( 'min-height', height);
 			var re = new Re();
 			$('#re_pesmica').on('play', function () {
+				$('.pokazivac').show();
 				re.runSongPointer();
 			});
 			$('#re_pesmica').on('pause', function () {
 				re.pauseSongNow();
+				$('.pokazivac').hide();
 			});
 		})
 		.controller('doCtrl', function ($scope) {
@@ -136,9 +145,11 @@ var controllers =
 			$('.page_back').css( 'min-height', height);
 			var do_song = new Do();
 			$('#do_pesmica3').on('play', function () {
+				$('.pokazivac').show();
 				do_song.runSongPointer();
 			});
 			$('#do_pesmica3').on('pause', function () {
 				do_song.pauseSongNow();
+				$('.pokazivac').hide();
 			});
 		});

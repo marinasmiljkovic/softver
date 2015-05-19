@@ -223,3 +223,9 @@ width: 800px;
 	background-repeat: no-repeat;
 	min-width: 800px;
 }
+.pokazivac{
+    display: none;
+}
+.page_back{
+    overflow: hidden;
+}
